@@ -24,3 +24,17 @@
 .banner{
 
 }
+
+
+.timer{
+    
+    background-color: gray;
+    height: 50vh;
+
+}
+
+.btn-group{
+        display: block;
+    width: 50%;
+    margin-top: 10vh;
+}
