@@ -90,7 +90,29 @@ body{
   margin-right: 30px;
   float: right;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bold;@font-face {
+  font-family: 'Orbitron';
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v7/HmnHiRzvcnQr8CjBje6GQvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@media (min-width: 641px) {
+    span.icon {display:none}
+    span.text {display:inline-block}
+    .hid{display: none}
+}
+
+@media (max-width: 640px) {
+    span.icon {display:inline-block}
+    span.text {display:none}
+    
+}
+
+.text-digital {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.bg-red {
+  background-color: red;
+}
 }
 .timer .clocky {
   cursor: pointer;

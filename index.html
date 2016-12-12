@@ -7,12 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<!--Project Title-->
-		<title>Pomodoro Clock</title>
-
-  		<meta name="author" content="The Lusina">
-		<meta name="description" content="Pomodoro Clock">
-		<meta name="keywords" content="pomodoro clock,pomodoro, clock, Pomodoro clock">
+		
 
 		<!--Icons-->
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css">
@@ -30,9 +25,10 @@
 		
 <!--		<link rel="stylesheet" href="css/materialize.min.css">-->
 		<!--Custom CSS-->
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/reset.css">
-
+		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tab-view.css">
+        
 
 	</head>
  <body>
@@ -42,11 +38,12 @@
     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
       <div class="jumbotron" id="clock">
         <h1 class="h2 text-center">Countdown Clock</h1>
-       
-<!--
+<!--       timer-->
         <h2 class="h1 text-center text-digital" id="time">00:00</h2>
         <div class="btn-group btn-group-justified" role="group" aria-label="...">
--->
+            
+<!--            control buttons-->
+           
           <div class="btn-group" role="group">
             <button type="button" class="btn btn-default btn-lg btn-primary" role="group" id="plus">
               <span class="icon"><i class="fa fa-plus"></i></span>
@@ -71,6 +68,7 @@
               <span class="text">reset</span>
             </button>
           </div>
+           
         </div>
       </div>
     </div>
