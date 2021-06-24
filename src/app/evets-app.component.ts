@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'events-app',
   // templateUrl: './app.component.html',
-  template:`
+  template:
+  `
   <h2>Hello world</h2>
   `
   ,
-  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class EventsAppComponent {
   title = 'events';
 }
