@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { EventService } from './shared/events-service';
 
 
@@ -12,10 +12,14 @@ import { EventService } from './shared/events-service';
     ]
 })
 
-export class EventsListComponent {
-  events: any[]
+
+export class EventsListComponent implements OnInit {
+  events!: any []
   constructor(private eventService : EventService){
-    this.events = this.eventService.getEvents()
   }
-    
+  //use lifecycle hook to run event when app is initialized
+  ngOnInit() {
+    this.events = this.eventService.getEvents()
+
+  }
 }
